@@ -1,0 +1,30 @@
+from tkinter import *
+def Help():    
+    windowh=tkinter.Tk()
+    windowh.title("MRF.com/Help")
+    windowh.geometry('100x100')
+    windowh.configure(bg ="white")
+    l=Label(windowh,text='How to search for different modes of transport?',font=("Arial Bold",10))
+    l.place(relx = 0, rely = 0)
+    l1=Label(windowh,text='Our search is designed on the principle of easy access',font=("Arial Bold",10))
+    l1.place(relx = 0, rely = 0.05)
+    l2=Label(windowh,text='\t*Choose mode of transport in the Welcome to Move Run Fly window',font=("Arial Bold",10))
+    l2.place(relx = 0, rely = 0.1)
+    l3=Label(windowh,text='\t*Enter from and to city/airport',font=("Arial Bold",10))
+    l3.place(relx = 0, rely = 0.15)
+    l4=Label(windowh,text='\t*Select the date of travel',font=("Arial Bold",10))
+    l4.place(relx = 0, rely = 0.2)
+    l5=Label(windowh,text='\t*Choose the number of travelers and hit enter',font=("Arial Bold",10))
+    l5.place(relx = 0, rely = 0.25)
+    l6=Label(windowh,text='(OR) Directly choose mode of transport here:',font=("Arial Bold",10))
+    l6.place(relx = 0, rely = 0.3)
+    gt=tkinter.Button(windowh,text="Airways",fg="White",bg="Black",command= Airways)
+    gt.place(relx = 0.1, rely = 0.35)
+    gt1=tkinter.Button(windowh,text="Railways",fg="White",bg="Black",command= Railways)
+    gt1.place(relx = 0.2, rely = 0.35)
+    gt2=tkinter.Button(windowh,text="Roadways",fg="White",bg="Black",command= Roadways)
+    gt2.place(relx = 0.3, rely = 0.35)
+    
+Help()
+    
+
